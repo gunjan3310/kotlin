@@ -1,0 +1,2 @@
+class `area-of-circle` {
+}
