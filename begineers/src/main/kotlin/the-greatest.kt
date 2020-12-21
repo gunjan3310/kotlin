@@ -1,0 +1,2 @@
+class `the-greatest` {
+}
