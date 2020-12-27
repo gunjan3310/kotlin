@@ -16,10 +16,10 @@ fun main(args:Array<String>){
 
 
     if(A<(B+C)){
-        if(Math.pow(A,2.0) ==( Math.pow(B,2.0)+Math.pow(C,2.0))) println("TRIANGULO RETANGULO")
-        if(Math.pow(A,2.0) >( Math.pow(B,2.0)+Math.pow(C,2.0))) println("TRIANGULO OBTUSANGULO")
-        if(Math.pow(A,2.0) <( Math.pow(B,2.0)+Math.pow(C,2.0))) println("TRIANGULO ACUTANGULO")
+        if(A*A == B*B + C*C) println("TRIANGULO RETANGULO")
+        if(A*A > B*B + C*C) println("TRIANGULO OBTUSANGULO")
+        if(A*A < B*B + C*C) println("TRIANGULO ACUTANGULO")
         if (A==B && B==C) println("TRIANGULO EQUILATERO")
-        if (A==B || B==C || C==A) println("TRIANGULO ISOCELES")
-    }else  println("NAO FORMA TRIANGULO")
+        if (A==B || B==C || C==A) println("TRIANGULO ISOSCELES")
+    }else if (A>=B+C) println("NAO FORMA TRIANGULO")
 }
